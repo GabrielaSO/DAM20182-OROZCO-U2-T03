@@ -1,7 +1,7 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Home
+      Inicio
     </ion-title>
   </ion-navbar>
 </ion-header>
@@ -11,13 +11,10 @@
       NavPush 1
     </ion-card-header>
     <ion-card-content>
-      <p>Use both <code>navPush</code> and
-        <code>navParams</code></p>
+      <p>Utiliza: <code>navPush</code> y <code>navParams</code></p>
       <button ion-button block [navPush]="otherPage" [navParams]="myString">
-        OtherPage 1
+          Otra página 1
       </button>
-      [ 61 ]Adding Ionic Components
-      Chapter 2
     </ion-card-content>
   </ion-card>
   <ion-card>
@@ -25,17 +22,16 @@
       NavPush 2
     </ion-card-header>
     <ion-card-content>
-      <p>Use only <code>navPush</code> and pass an array instead</p>
+      <p>Utiliza <code>navPush </code>y pasa 'Array' </p>
       <ion-list>
         <ion-item>
-          <ion-label floating>Name</ion-label>
-          Adding Ionic 2 Components 58
-          <ion-input type="text" [(ngModel)]="myJSON.text">
-            </ion-input>
+          <ion-label floating>nombre</ion-label>
+           Agregando 'components'
+          <ion-input type="text" [(ngModel)]="myJSON.text"></ion-input>
         </ion-item>
       </ion-list>
       <div>
-        <button ion-button block color="secondary" [navPush]="otherPage" [navParams]="myJSON">Pagina 2</button>
+        <button ion-button block color="secondary" [navPush]="otherPage" [navParams]="myJSON">Otra página 2</button>
       </div>
     </ion-card-content>
   </ion-card>
@@ -44,9 +40,8 @@
       NavPush 3
     </ion-card-header>
     <ion-card-content>
-      <p>Use click event to trigger <code>nav.push</code> in
-        Javascript </p>
-      <button ion-button block color="dark" (click)="goToOtherPage()">Pagina 3</button>
+      <p>Utiliza Evento click() y <code>nav.push</code></p>
+      <button ion-button block color="dark" (click)="gotoOtherPage()">Otra página 3</button>
     </ion-card-content>
   </ion-card>
 </ion-content>
